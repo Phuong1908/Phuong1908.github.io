@@ -1,0 +1,48 @@
+body{
+    margin: 0 10% 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mulish";
+    font-size: 14px;
+}
+
+body h1 {
+    font-size: 32px;
+    color: navy;
+    text-align: center;
+}
+
+body .question {
+    width: 100%
+}
+
+body .question strong{
+    color: blue;
+}
+
+body .question .tracks {
+    display: flex;
+    flex-direction: column;
+}
+
+body .question,.q3 .tracks {
+    margin-top: 10px;
+    align-items: center;
+}
+
+body .question .tracks .row{
+    display: flex;
+    flex-direction: row;
+}
+
+body .question .tracks .track {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+body .question .tracks .track p{
+    color: dodgerblue;
+}
