@@ -46,3 +46,13 @@ body .question .tracks .track {
 body .question .tracks .track p{
     color: dodgerblue;
 }
+
+@media only screen and (max-device-width: 414px) {
+    body .question .tracks {
+        display: flex;
+    }
+
+    body .question .tracks .row{
+        display: block;
+    }
+}
