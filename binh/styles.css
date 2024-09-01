@@ -86,7 +86,7 @@ main {
     text-decoration: none;
     color: inherit;
 
-    .project-details {
+    .project-description {
       display: flex;
       flex-direction: column;
       padding: 0.875rem 1.25rem;
@@ -112,7 +112,7 @@ main {
 
   .project-card img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
   }
 
@@ -158,17 +158,14 @@ footer {
 
 .social-links {
   margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .social-links a {
   color: #555;
-  margin-right: 1rem;
   font-size: 1.2rem;
   transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #007bff;
 }
 
 .footer-bottom {
@@ -188,17 +185,21 @@ footer {
   }
 }
 
-.back-link {
-  display: inline-block;
-  margin-bottom: 2rem;
+a {
   color: #333;
   text-decoration: none;
-  font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.back-link:hover {
+a:hover {
   color: #007bff;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 1rem 0;
+
+  font-weight: 600;
 }
 
 .container {
@@ -207,11 +208,96 @@ footer {
   padding: 2rem;
 }
 
-.project-images {
+/* Project Header */
+.project-header {
+  background-color: #d8d9d9;
+  text-align: center;
+}
+
+.project-header h1 {.
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+/* Project Showcase */
+.project-showcase {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.project-image {
   width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-quick-info {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -2rem;
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Project Details */
+.project-details {
+  margin-top: 3rem;
+}
+
+.detail-section {
+  margin-bottom: 2rem;
+}
+
+.contribution-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contribution-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contribution-list i {
+  font-size: 1.5rem;
+}
+
+.contribution-list svg {
+  margin-top: 5px;
+}
+
+.contribution-list h3 {
+  margin: 0;
+}
+
+/* Project Gallery */
+.project-gallery {
+  margin-top: 3rem;
+}
+
+.gallery-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  width: 100%;
+  gap: 1.5rem;
 
   img {
     max-width: 100%;
@@ -219,8 +305,31 @@ footer {
   }
 }
 
-.project-images.row {
+.gallery-grid.row {
   flex-direction: row;
+}
+
+.gallery-grid img {
+  width: fit-content;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-quick-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contribution-list li {
+    flex-direction: column;
+  }
 }
 
 /* Add this to the head of your HTML to use Font Awesome icons */

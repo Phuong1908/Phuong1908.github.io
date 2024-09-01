@@ -11,49 +11,94 @@
     />
   </head>
   <body>
-    <main>
+    <header class="project-header">
       <div class="container">
         <a href="index.html" class="back-link">&larr; Back to Projects</a>
+        <h1>Cửu Dương Truyền Kỳ 2</h1>
+        <p class="subtitle">MMO Game | Unity Developer at GihOt Studio</p>
+      </div>
+    </header>
 
-        <section class="project-overview">
-          <h1>Cửu Dương Truyền Kỳ 2 (MMO)</h1>
-          <p class="subtitle">Unity developer - GihOt Studio</p>
-
-          <div class="project-details">
-            <div class="detail-section">
-              <h2>Project Overview</h2>
-              <p>A MMO with Chinese wuxia fiction background.</p>
-              <p>Using: Unity, C#, NGUI, toLua.</p>
-              <p>
-                Website:
-                <a href="https://9dtruyenky2.gosu.vn/home" target="_blank"
-                  >https://9dtruyenky2.gosu.vn/home</a
-                >
-              </p>
+    <main>
+      <div class="container">
+        <section class="project-showcase">
+          <img
+            src="assets/9DTruyenKy2_overview.png"
+            alt="Cửu Dương Truyền Kỳ 2 Overview"
+            class="project-image"
+          />
+          <div class="project-quick-info">
+            <div class="info-item">
+              <i class="fas fa-code"></i>
+              <span>Unity, C#, NGUI, toLua</span>
             </div>
-
-            <div class="detail-section">
-              <h2>My Contributions</h2>
-              <ul>
-                <li>
-                  Path finding data baking: The project uses a custom grid-based
-                  data structure for both client and server side in path
-                  finding.
-                </li>
-                <li>Configuring character's skills.</li>
-                <li>Fixing bugs.</li>
-                <li>
-                  Configuring for expanded game contents (more pets, more
-                  quests, more levels, ...).
-                </li>
-              </ul>
+            <div class="info-item">
+              <i class="fas fa-globe"></i>
+              <a href="https://9dtruyenky2.gosu.vn/home" target="_blank"
+                >Visit Website</a
+              >
             </div>
           </div>
         </section>
 
-        <section class="project-images">
-            <img src="assets/9DTruyenKy2_overview.png" alt="Pet System" class="project-image" />
-          </section>
+        <section class="project-details">
+          <div class="detail-section">
+            <h2>Project Overview</h2>
+            <p>
+              Cửu Dương Truyền Kỳ 2 is an immersive MMO set in a rich Chinese
+              wuxia fiction world. Players embark on epic quests, master martial
+              arts, and engage in thrilling battles in a beautifully crafted
+              universe.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h2>My Contributions</h2>
+            <ul class="contribution-list">
+              <li>
+                <i class="fas fa-map-marked-alt"></i>
+                <div class="contribution-details">
+                  <h3>Path Finding Data Baking</h3>
+                  <p>
+                    Implemented a custom grid-based data structure for efficient
+                    path finding on both client and server sides.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-magic"></i>
+                <div>
+                  <h3>Character Skill Configuration</h3>
+                  <p>
+                    Designed and implemented a flexible system for configuring
+                    diverse character skills and abilities.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-bug"></i>
+                <div>
+                  <h3>Bug Fixing and Optimization</h3>
+                  <p>
+                    Identified and resolved various gameplay and performance
+                    issues to ensure a smooth gaming experience.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-expand-alt"></i>
+                <div>
+                  <h3>Game Content Expansion</h3>
+                  <p>
+                    Configured and implemented expanded game content, including
+                    new pets, quests, and level progressions.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -76,8 +121,8 @@
                 <i class="fab fa-github"></i>
               </a>
             </div>
+          </div>
         </div>
-      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
