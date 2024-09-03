@@ -43,6 +43,10 @@ main {
 
 .profile-photo-container {
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .profile-photo {
@@ -53,10 +57,16 @@ main {
 }
 
 .about-text h1 {
-  font-size: 54px;
-  line-height: 60px;
+  font-size: 3.375rem;
+  line-height: 3.75rem;
   font-weight: 600;
   margin: 0;
+  letter-spacing: -2px;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 .about-text h2 {
