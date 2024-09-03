@@ -21,12 +21,7 @@ main {
   }
 }
 
-/* About Me Section */
-/* ... (existing styles remain the same) ... */
-
-/* About Me Section */
 #about-me {
-  background-color: darkgray;
   padding: 4rem 0;
   margin-bottom: 4rem;
 }
@@ -41,27 +36,11 @@ main {
   padding: 0 2rem;
 }
 
-.profile-photo-container {
-  flex-shrink: 0;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-.profile-photo {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .about-text h1 {
   font-size: 3.375rem;
   line-height: 3.75rem;
   font-weight: 600;
   margin: 0;
-  letter-spacing: -2px;
 
   @media (max-width: 768px) {
     font-size: 3rem;
